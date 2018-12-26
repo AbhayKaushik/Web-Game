@@ -1,7 +1,6 @@
 /* If you're feeling fancy you can add interactivity 
     to your site with Javascript */
 
-// prints "hi" in the browser's dev tools console
 console.log('hi');
 let userScore = 0;
 let computerScore = 0;
@@ -10,9 +9,9 @@ const computerScore_span = document.getElementById("comp-score");
 
 const scoreBoard_div = document.querySelector(".score-board");
 const result_p = document.querySelector(".result > p");
-const r_div = document.getElementById("r");
-const p_div = document.getElementById("p");
-const s_div = document.getElementById("s");
+const r_div = document.getElementById("fire");
+const p_div = document.getElementById("water");
+const s_div = document.getElementById("earth");
 
 function getComputerChoice() {
   const choices = ["r", "p", "s"];
@@ -23,9 +22,9 @@ function getComputerChoice() {
 console.log(getComputerChoice());
 
 function convertToWord(letter) {
-  if(letter === "r") return "r";
-  if(letter === "p") return "p";
-  return "s";
+  if(letter === "r") return "fire";
+  if(letter === "p") return "water";
+  return "earth";
 }  
 
 function win(userChoice, computerChoice) {
@@ -54,7 +53,7 @@ function draw(userChoice, computerChoice) {
   console.log(" DRAW");
   const smallUserWord = "user".fontsize(3).sub();
   const smallCompWord = "comp".fontsize(3).sub();
-  result_p.innerHTML = ` ${convertToWord(userChoice)}${smallUserWord} equals to ${convertToWord(computerChoice)}${smallCompWord}.You lose ! `; 
+  result_p.innerHTML = ` ${convertToWord(userChoice)}${smallUserWord} equals to ${convertToWord(computerChoice)}${smallCompWord}.A draw ! `; 
 }
 function game(userChoice) {
   const computerChoice = getComputerChoice();
