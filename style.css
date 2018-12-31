@@ -20,31 +20,20 @@ header{
   background: #160f19;
 }
 
-.green-glow {
-  border: 4px solid #4dcc7d;
-  box-shadow : 0 0 10px #31b43a;
-}
-
-.red-glow {
-  border: 4px solid #fc121b;
-  box-shadow : 0 0 10px #d01115;
-}
-
-.grey-glow {
-  border: 4px solid #464647;
-  box-shadow : 0 0 10px #25292b;
-}
-
 header > h1{
+  margin-top: 50px;
+  margin-bottom: 30px;
   color: #3d1cd6;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-size: 70px;
+  font-family: 'Staatliches', cursive;
 }
 
 .score-board {
   margin: 20px auto;
-  border: 3px solid blue;
+  border: 3px solid #0F55aa;
   border-radius: 4px;
+  border-width:10px;
   text-align: center;
   width: 200px;
   color: red;
@@ -59,22 +48,24 @@ header > h1{
   font-size: 14px;
   padding : 2px 10px;
   font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 #user-label {
   position: absolute;
-  top: 30px;
-  left: -25px;
+  top: 27px;
+  left: -33px;
 }
 
 #computer-label {
   position: absolute;
-  top: 30px;
-  right: -30px;
+  top: 27px;
+  right: -35px;
 }
 
 .result {
-  font-size: 40px;
+  margin-top: 30px;
+  font-size: 35px;
 }
 
 .result > p {
@@ -109,6 +100,20 @@ header > h1{
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
+.green-glow{
+  border: 4px solid #4dcc7d;
+  box-shadow : 0 0 10px #31b43a;
+}
+
+.red-glow{
+  border: 4px solid #fc121b;
+  box-shadow : 0 0 10px #d01115;
+}
+
+.grey-glow{
+  border: 4px solid #464647;
+  box-shadow : 0 0 10px #25292b;
+}
